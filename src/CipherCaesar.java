@@ -7,7 +7,7 @@ public class CipherCaesar {
             ".,\":-!? +-*/\\@#$%^&(){}[];'|`~=_©«»—" +
             "0123456789";
 
-    public static String encrypt(String message, int key) {
+    public String encrypt(String message, int key) {
         StringBuilder result = new StringBuilder();
         for (char aChar : message.toCharArray()) {
             int index = ALPHABET.indexOf(aChar);
@@ -20,7 +20,7 @@ public class CipherCaesar {
         return result.toString();
     }
 
-    public static String decrypt(String message, int key) {
+    public String decrypt(String message, int key) {
         return encrypt(message, key * (-1));
     }
 }

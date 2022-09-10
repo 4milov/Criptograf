@@ -13,7 +13,7 @@ public class Menu {
         String answer = scanner.nextLine();
 
         switch (answer){
-            case ("1") -> System.out.println("Зашифровать");
+            case ("1") -> new ChoiceOne().choiceOne();
             case ("2") -> System.out.println("Расшифровать");
             case ("3") -> System.out.println("Подобрать ключ");
             case ("4") -> System.out.println("Синтаксический анализ");
